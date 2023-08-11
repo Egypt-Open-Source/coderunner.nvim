@@ -1,0 +1,20 @@
+================================================================================
+                                                             *coderunner.nvim*
+
+coderunner.nvim is a plugin for runnning your code. It helps you test your code blazing fastly!
+PLEASE NOTE THAT THIS PLUGIN IS STILL HEAVILY WIP AND I AM WRITING IT ONLY AS
+AN EXERCISE FOR ME ON LUA(I DON'T KNOW IF I WILL COMPLETE IT :\)
+
+
+                                            *:lua require("coderunner").run()*
+This is the main function that this plugin depends on, just you can set a
+keymap for it and boom you are ready :), just follow that:
+
+    local coderunner = require("coderunner")
+    vim.keymap.set("n", your-keymap, coderunner.run)
+
+                                                                    *Features*
+1. Detects file type automatically
+2. Run code blazingly fast!
+
+vim:tw=78:ts=8:ft=help:norl:

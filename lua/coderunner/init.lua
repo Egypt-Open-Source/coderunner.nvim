@@ -20,11 +20,11 @@ M.run = function()
     if file == "" then
         print("CodeRunner: Error: Not supported file type")
     elseif extension then
-        small_extension = extension:lower()
+        local small_extension = extension:lower()
         vim.cmd("split | terminal")
-        if extension == "cpp" or extension:lower() == "c" then
+        if small_extension == "cpp" or small_extension == "c" then
             cpp(file)
-        elseif extension == "py" then
+        elseif small_extension == "py" then
             py(file)
         else
             print("CodeRunner: Error: Not supported file type")

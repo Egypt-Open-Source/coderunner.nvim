@@ -5,7 +5,6 @@ local cpp = function(file)
     vim.cmd(command)
     local runcomm = ':call jobsend(b:terminal_job_id, "./a.out \\n")'
     vim.cmd(runcomm)
-    vim.cmd(':call jobsend(b:terminal_job_id, "rm -rf a.out \\n")')
 end
 
 local py = function(file)
